@@ -322,8 +322,38 @@ const CognitiveNavigationPlatform = () => {
             <h3 className="text-lg font-semibold mb-4 flex items-center">
               <TrendingUp className="w-5 h-5 mr-2 text-green-400" /> Продуктивність
             </h3>
-            {/* Бар-чарти по CPU, RAM, Network */}
-            {/* (Тут ти можеш додати більше логіки, якщо хочеш зробити їх інтерактивними) */}
+            <div className="space-y-3">
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-slate-300">CPU навантаження</span>
+                <div className="flex items-center space-x-2">
+                  <div className="w-20 h-2 bg-slate-600 rounded-full overflow-hidden">
+                     <div className="w-3/4 h-full bg-blue-500 rounded-full" />
+                  </div>
+                <span className="text-xs text-slate-400">76%</span>
+                </div>
+              </div>
+          
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-slate-300">Пам'ять</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-20 h-2 bg-slate-600 rounded-full overflow-hidden">
+                      <div className="w-1/2 h-full bg-green-500 rounded-full" />
+                    </div>
+                  <span className="text-xs text-slate-400">52%</span>
+                </div>
+              </div>
+          
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-slate-300">Мережа</span>
+                <div className="flex items-center space-x-2">
+                  <div className="w-20 h-2 bg-slate-600 rounded-full overflow-hidden">
+                    <div className="w-1/3 h-full bg-yellow-500 rounded-full" />
+                  </div>
+                  <span className="text-xs text-slate-400">34%</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
